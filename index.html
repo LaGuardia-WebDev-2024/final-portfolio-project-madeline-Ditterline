@@ -1,12 +1,12 @@
 <!-- Final Project
 Requirements
-[  ] Customized HTML Page #1
-[  ] Customized HTML Page #2 
-[  ] Customized HTML Page #3
-[  ] Customized HTML Page #4
+[yes] Customized HTML Page #1
+[yes] Customized HTML Page #2 
+[yes] Customized HTML Page #3
+[yes] Customized HTML Page #4
 
 Select ONE Additional Feature to Add  
-[ no ] Feature 1 - Google Font
+[ yes ] Feature 1 - Google Font
 [ no ] Feature 2 - Include jQuery
 [ no ] Feature 3 - Embed Code from Spotify/Google Docs/YouTube
 [ no ] Feature 4 - Customized HTML Page #5
@@ -19,13 +19,16 @@ Select ONE Additional Feature to Add
     <meta charset="utf-8" />
     <title>Final Portfolio Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
     <style>
       /* Styling Only Related To THIS Page */
       /*~~~~~ Taken From:
       https://www.w3schools.com/howto/howto_css_parallax.asp*/
       .parallax {
         /* The image used */
-        background-image: url("CS_Ed_Week_2025.jpg");
+        background-image: url("images/IMG_4419.jpeg");
 
         /* Set a specific height */
         min-height: 500px;
@@ -38,47 +41,56 @@ Select ONE Additional Feature to Add
       }
       .textblock {
         min-height: 200px;
-        background-color: black;
+        background-color: rgb(25, 21, 20);
         color: rgb(172, 172, 127);
+      }
+      h1{
+        color: rgb(172,172,127);
       }
       .parent-flex {
         display: flex;
       }
       .child-flex {
         background-color: rgb(30, 42, 32);
+        width: 1400px;
         margin: 30px;
         padding: 10px;
-        text-align: justify;
+        text-align: center;
       }
       .para-1{
         display: flex;
         align-items: center;
       }
+      .beau-rivage-regular {
+  font-family: "Beau Rivage", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.im-fell-english-regular {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul>   
+    <ul class="im-fell-english-regular">   
        <li><a class="active" href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
+      <li><a href="art.html">Photos</a></li>
       <li><a href="resume.html">Resume</a></li>
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>Maddie Ditterline</h1>
+    <h1 class="beau-rivage-regular">Maddie Ditterline</h1>
     <div class="parallax"></div>
 
     <div class="textblock parent-flex">
       <div class="child-flex para-1">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+        <p class="im-fell-english-regular">
+          Hello! I'm Maddie, and this is my website.
         </p>
       </div>
     </div>

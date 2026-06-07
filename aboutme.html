@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <title>Final Project - About Me</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
     <style>
       /* Styling Only Related To THIS Page */
       .parent-flex {
@@ -21,6 +24,9 @@
         width: 150px;
         padding: 20px;
       }
+      h1{
+        color: rgb(172,172,127)
+      }
       .child-flex p {
         background-color: rgb(51, 54, 48);
         min-height: 300px;
@@ -28,37 +34,48 @@
         padding: 20px;
         margin: 20px;
       }
+      .img{
+        width:100%;
+      }
       body{
         background-color:(30,42,32);
       }
+      .beau-rivage-regular {
+  font-family: "Beau Rivage", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.im-fell-english-regular {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  font-style: normal;
+}
     </style>
   </head>
   <body>
     <!-- ⬆⬆⬆⬆ Nav Bar -->
-    <ul>
+    <ul class="im-fell-english-regular">
       <li><a href="index.html">Home</a></li>
       <li><a class="active" href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
+      <li><a href="art.html">Photos</a></li>
       <li><a href="resume.html">Resume</a></li>
     </ul>
 
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>About Me</h1>
+    <h1 class="beau-rivage-regular">About Me</h1>
     <div class="parent-flex">
       <div class="child-flex">
-        <img
-          src="images/HeartIcons.jpeg"
+        <img class="img"
+          src="images/IMG_4433.jpg"
         />
       </div>
       <div class="child-flex">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-          pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-          tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-          hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent
-          per conubia nostra inceptos himenaeos.
+        <p class="im-fell-english-regular">
+          Maddie Ditterline is an Actor and a soon-to-be graduate of Fiorello H. 
+          LaGuardia High School for Music and Art & Performing Arts. Previous productions include: 
+          MacBeth (LaGuardia High School); Curtains, a Musical Whodunnit; She Kills Monsters; 
+          and Hello World (Wingspan Arts); Recovered, a short film (Art and Design). In the fall, Maddie 
+          will be attending Arcadia University and will be based in the Philadelphia area.
         </p>
       </div>
     </div>
